@@ -1,0 +1,33 @@
+//Lezione 8 Novembre 2018
+//non possibile da compilare ,errore nel codice che non riesco a capire 
+
+
+package main
+
+import (
+	"go/scanner"
+	"strings"
+	. "fmt"
+	"bufio"
+)
+
+func conta(s,p string) int{
+for	!=-1{
+	i:= strings.Index(s,p)
+	if i==-1 {break}
+	s=s(i+1:)
+	c++
+	Println("la mia stringa ora è : ",s) //debugging, mostro all'interno del ciclo cosa succede
+	}
+	return c
+}
+
+func main() {
+	scanner:=bufio.NewScanner(os.Stdin)
+	scanner.scan()
+	pagliaio:=scanner.Text()
+	scanner.scan()
+	ago:=scanner.Text()
+	Println("La Stringa",ago,"compare",conta(pagliaio,ago),"volte in ",pagliaio)
+
+}
